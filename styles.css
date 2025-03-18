@@ -2,7 +2,7 @@ body {
     font-family: 'Poppins', sans-serif;
     line-height: 1.6;
     color: #333;
-    background-color: #fffbfc;
+    background-color: #fbfcff;
     margin: 0;
     padding: 0;
 }
@@ -69,16 +69,16 @@ nav ul li a {
 }
 
 h1, h2 {
-    color: #ff9cd4;
+    color: #4e98ff;
 }
 
 a.references {
     font-family: 'Poppins', sans-serif;
-    color: #dc70ad;
+    color: #4e98ff;
 }
 
 footer {
-    background-color: #FF69B4;
+    background-color: #4e98ff;
     color: white;
     width: 100%; /* Ensures it spans the full width */
     text-align: center;
@@ -105,7 +105,7 @@ footer {
 .button {
     display: inline-block;
     padding: 12px 24px;
-    background-color: #FF69B4;
+    background-color: #4e98ff;
     color: white;
     text-decoration: none;
     border-radius: 30px;
@@ -202,7 +202,7 @@ footer {
 }
 
 footer {
-    background-color: #FF69B4;
+    background-color: #4e98ff;
     color: white;
     width: 1000px !important;
     text-align: center;
@@ -220,7 +220,7 @@ footer {
 }
 
 .product-list a {
-    color: #FF69B4;
+    color: #4e98ff;
     text-decoration: none;
     font-weight: 600;
 }
@@ -256,7 +256,7 @@ footer {
 .back-to-top {
     display: inline-block;
     padding: 10px 20px;
-    background-color: #f08;
+    background-color: #4e98ff;
     color: white;
     text-decoration: none;
     border-radius: 5px;
@@ -265,7 +265,7 @@ footer {
 }
 
 .back-to-top:hover {
-    background-color: #c06;
+    background-color: #3480e9;
 }
 
 .main-nav {
@@ -298,10 +298,10 @@ footer {
 }
 
 .nav-link:hover {
-    background-color: #FF69B4;
+    background-color: #4e98ff;
     color: white;
     transform: translateY(-3px);
-    box-shadow: 0 4px 8px rgba(255, 105, 180, 0.3);
+    box-shadow: 0 4px 8px rgba(78, 152, 255, 0.3);
 }
 
 .back-to-top {
@@ -318,10 +318,10 @@ footer {
 }
 
 .back-to-top:hover {
-    background-color: #FF69B4;
+    background-color: #4e98ff;
     color: white;
     transform: translateY(-5px); /* Slightly more lift */
-    box-shadow: 0 6px 12px rgba(255, 105, 180, 0.3);
+    box-shadow: 0 4px 8px rgba(78, 152, 255, 0.3);
 }
 /* Gallery styling */
 .gallery-container {
@@ -386,7 +386,7 @@ footer {
 
 /* Default active state for first thumbnail */
 .thumb-link.active {
-    border-color: #FF69B4;
+    border-color: #4e98ff;
 }
 
 /* Remove active state from all thumbnails when any image is targeted */
@@ -398,7 +398,7 @@ footer {
 #img1:target ~ .gallery-thumbs .thumb-link[href="#img1"],
 #img2:target ~ .gallery-thumbs .thumb-link[href="#img2"],
 #img3:target ~ .gallery-thumbs .thumb-link[href="#img3"] {
-    border-color: #FF69B4;
+    border-color: #4e98ff;
 }
 
 .thumb-link:hover {
