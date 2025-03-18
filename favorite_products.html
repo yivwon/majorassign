@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Favorite Products | Juls Aesthetics</title>
+    <link rel="icon" type="image/x-icon" href="images/favicon.ico">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <style>
+        .product-container {
+            width: 100%;
+            border-collapse: separate;
+            border-spacing: 0 25px;
+            border-radius: 15px;
+
+        }
+        
+        .product-row {
+            background-color: white;
+            border-radius: 15px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            border-radius: 15px;
+        }
+        
+        .product-row:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 12px 20px rgba(0, 0, 0, 0.15);
+        }
+        
+        .product-image-cell {
+            width: 200px;
+            padding: 20px;
+            text-align: center;
+            vertical-align: middle;
+            border-right: 1px solid #f0f0f0;
+        }
+        
+        .product-image {
+            width: 150px;
+            height: 150px;
+            object-fit: cover;
+            border-radius: 10px;
+            transition: transform 0.3s ease;
+        }
+        
+        .product-image:hover {
+            transform: scale(1.05);
+        }
+        
+        .product-info {
+            padding: 20px 30px;
+            vertical-align: top;
+        }
+        
+        .product-name {
+            font-size: 1.4em;
+            color: #FF69B4;
+            margin: 0 0 15px 0;
+            font-weight: 600;
+        }
+        
+        .product-name a {
+            color: #FF69B4;
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+        
+        .product-name a:hover {
+            color: #FF1493;
+            text-decoration: underline;
+        }
+        
+        .product-description {
+            color: #555;
+            line-height: 1.6;
+            margin: 0;
+        }
+        
+        .product-category {
+            display: inline-block;
+            background-color: #FFF0F5;
+            color: #FF69B4;
+            font-size: 0.8em;
+            padding: 5px 10px;
+            border-radius: 20px;
+            margin-bottom: 10px;
+        }
+        
+        .intro-text {
+            max-width: 800px;
+            margin: 0 auto 30px;
+            text-align: center;
+            line-height: 1.6;
+        }
+    </style>
+</head>
+<body id="top">
+    <table>
+        <tr>
+            <td colspan="2">
+                <header>
+                    <table>
+                        <tr>
+                            <img src="images/Banner.jpg" alt="Juls Aesthetics Banner" title="Juls Aesthetics Banner" class="banner active hover">
+                            <td>
+                                <nav class="main-nav">
+                                    <ul>
+                                        <li><a href="index.html" class="nav-link">Home</a></li>
+                                        <li><a href="services.html" class="nav-link">Services</a></li>
+                                        <li><a href="about.html" class="nav-link">About</a></li>
+                                        <li><a href="favorite_products.html" class="nav-link">Favorite Products</a></li>
+                                        <li><a href="references.html" class="nav-link">References</a></li>
+                                    </ul>
+                                </nav>
+                            </td>
+                        </tr>
+                    </table>
+                </header>
+            </td>
+        </tr>
+        <tr>
+            <td colspan="2">
+                <h1 class="header">Favourite Products</h1>
+                <p class="intro-text">As a professional aesthetician, I'm always on the lookout for high-quality products that deliver real results. Here are some of my personal favorites that I use in my treatments and recommend to my clients for their at-home skincare routines.</p>
+            </td>
+        </tr>
+        <tr>
+            <td colspan="2">
+                <table class="product-container">
+                    <tr class="product-row">
+                        <td class="product-image-cell">
+                            <img src="images/halederma.png" title="Hale Derma" alt="Hale Derma" class="product-image hover">
+                        </td>
+                        <td class="product-info">
+                            <span class="product-category">Hale Derma</span>
+                            <span class="product-category">Colorescience</span>
+                            <span class="product-category">Skin Care</span>
+                            <h3 class="product-name"><a href="https://halederma.com/" target="_blank">Hale Derma</a></h3>
+                            <p class="product-description">Hale Derma is a Canadian skincare brand that offers a range of products for various skin concerns. Their products are formulated with high-quality ingredients and are suitable for all skin types. I particularly love their gentle yet effective approach to skincare that focuses on maintaining the skin's natural barrier.</p>
+                        </td>
+                    </tr>
+                    <tr class="product-row">
+                        <td class="product-image-cell">
+                            <img src="images/glymedmegacream.jpg" title="Glymed Mega Cream" alt="Glymed Mega Cream" class="product-image hover">
+                        </td>
+                        <td class="product-info">
+                            <span class="product-category">Glymed</span>
+                            <span class="product-category">Cleanser</span>
+                            <span class="product-category">Skin Care</span>
+                            <h3 class="product-name"><a href="https://www.glymedpluscanada.com/mega-cream-cleanser-gm-057-c" target="_blank">Glymed Mega Cream Cleanser</a></h3>
+                            <p class="product-description">GlyMed Mega Cream Cleanser is a gentle, ultra-hydrating cleanser designed for dry and sensitive skin. It removes impurities while nourishing with rich emollients, leaving skin soft, smooth, and refreshed without stripping natural moisture. This is my go-to recommendation for clients with dehydrated or sensitive skin.</p>
+                        </td>
+                    </tr>
+                    <tr class="product-row">
+                        <td class="product-image-cell">
+                            <img src="images/colorsciencespf.png" title="Colorescience Tinted SPF" alt="Colorescience Tinted SPF" class="product-image hover">
+                        </td>
+                        <td class="product-info">
+                            <span class="product-category">Colorescience</span>
+                            <span class="product-category">Sun Protection</span>
+                            <span class="product-category">Skin Care</span>
+                            <h3 class="product-name"><a href="https://www.colorescience.com/products/sunforgettable-total-protection-face-shield-flex-spf-50?_pos=2&_sid=d17541c49&_ss=r" target="_blank">Colorescience Tinted SPF</a></h3>
+                            <p class="product-description">Colorescience Tinted SPF is a lightweight, mineral-based sunscreen that provides broad-spectrum protection while evening out skin tone with a natural tint. It's perfect for daily wear and offers protection against UV rays, blue light, pollution, and infrared radiation. The best part? It doesn't leave a white cast and feels amazing on the skin.</p>
+                        </td>
+                    </tr>
+                    <tr class="product-row">
+                        <td class="product-image-cell">
+                            <img src="images/totaleyerenewal.jpg" title="Total Eye Renewal" alt="Total Eye Renewal" class="product-image hover">
+                        </td>
+                        <td class="product-info">
+                            <span class="product-category">Colorescience</span>
+                            <span class="product-category">Eye Care</span>
+                            <h3 class="product-name"><a href="https://www.colorescience.com/products/total-eye-3-in-1-renewal-therapy-spf-35?_pos=2&_sid=f20265055&_ss=r" target="_blank">Total Eye Renewal Therapy SPF</a></h3>
+                            <p class="product-description">Total Eye Renewal Therapy SPF is a multitasking eye treatment that brightens, hydrates, and protects with SPF while reducing the appearance of dark circles and fine lines. The cooling metal applicator feels amazing and helps reduce puffiness. This is one of my personal must-haves and clients always notice a difference when they start using it.</p>
+                        </td>
+                    </tr>
+                    <tr class="product-row">
+                        <td class="product-image-cell">
+                            <img src="images/colorbalm.jpeg" title="Colorescience Color Balm" alt="Colorescience Color Balm" class="product-image hover">
+                        </td>
+                        <td class="product-info">
+                            <span class="product-category">Colorescience</span>
+                            <span class="product-category">Lip & Cheek</span>
+                            <span class="product-category">Skin Care</span>
+                            <h3 class="product-name"><a href="https://www.colorescience.com/products/sunforgettable-total-protection-color-balm-spf-50?_pos=1&_sid=786d9d0ee&_ss=r" target="_blank">Colour Balms SPF</a></h3>
+                            <p class="product-description">Colorescience Colour Balms SPF are multitasking, mineral-based balms that provide sun protection, hydration, and a hint of buildable color for lips and cheeks. These are perfect for adding a natural flush of color while still protecting your skin. I love recommending these for clients who want a simple, on-the-go product that does it all.</p>
+                        </td>
+                    </tr>
+                </table>
+            </td>
+        </tr>
+    </table>
+
+    <table class="back-to-top-table">
+        <tr>
+            <td align="center">
+                <a href="#top" class="back-to-top">Back to Top</a>
+            </td>
+        </tr>
+
+        <tr>
+            <td colspan="2">
+                <footer style="right: 0px; position: relative;">
+                    <p>&copy; 2025 Juls Aesthetics By Julia. All rights reserved.</p>
+                </footer>
+            </td>
+        </tr>
+    </table>
+
+
+</body>
+</html>
