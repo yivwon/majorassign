@@ -4,32 +4,47 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles.css">
-    <title>Tips | Paws & Pups</title>
+    <title>Tips & Tricks | Paws & Pups</title>
     <link rel="icon" type="image/x-icon" href="images/favicon.ico">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
     <style>
-        .about-content {
-            line-height: 1.8;
-        }
-        
-        .about-content p {
-            margin-bottom: 20px;
-        }
-        
-        .about-section-table {
-            width: 100%;
+          body {
+    font-family: 'Poppins', sans-serif;
+    line-height: 1.6;
+    color: #333;
+    margin: 0;
+    padding: 0;
+}
+
+table {
+    width: 1000px !important;
+    max-width: 1000px;
+    margin: 0 auto;
+    border-collapse: collapse;
+}
+
+td span {
+    padding: 20px;
+    vertical-align: top;
+    width: 960px !important;
+    max-width:960px !important; 
+}
+        .adoption-table {
             background-color: white;
             border-radius: 15px;
             box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
             margin-bottom: 30px;
+            width: 960px;
             border-collapse: separate;
+            border-spacing: 0;
+            overflow: hidden;
         }
         
-        .about-section-cell {
-            padding: 25px;
-        }
+        /* .adoption-cell {
+             padding: 25px; */
         
-        .about-section-heading {
+        
+        .adoption-table h2 {
             margin-top: 0;
             border-bottom: 2px solid #ccdeff;
             padding-bottom: 10px;
@@ -37,52 +52,141 @@
             color: #4e98ff;
         }
         
-        .contact-link {
-            display: block;
-            padding: 10px 0;
+        .adoption-title {
             color: #4e98ff;
+            margin-top: 20px;
+            margin-bottom: 10px;
+            font-weight: 600;
+        }
+        
+        .price-list {
+            list-style-type: none;
+            padding: 0;
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 15px;
+        }
+        
+        .price-list li {
+            background-color: white;
+            padding: 15px;
+            border-radius: 10px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
             transition: all 0.3s ease;
-            text-decoration: none;
+            border-left: 4px solid #4e98ff;
         }
         
-        .contact-link:hover {
-            color: #4e98ff;
-            transform: translateX(5px);
+        .price-list li:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            border-left: 4px solid #4e98ff;
         }
         
-        .location-highlight {
-            color: #4e98ff;
-            font-weight: bold;
+        .adoption-description {
+            margin-bottom: 15px;
+            line-height: 1.6;
         }
         
-        .parking-image {
-            border-radius: 15px;
-            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-            max-width: 100%;
+        /* Simple item gallery styling */
+        .dog-item-gallery {
+            width: 980px;
+            margin: 0 auto; /* Centers the gallery */
+            border-collapse: separate;
+            position: relative;
+            left: -19px;
+        }
+        
+        .dog-item-image {
+            width: 200px;
+            height: 230px;
+            border-radius: 10px;
+            padding-bottom: 65px;
+            /* overflow: hidden; */
+            position: relative;
+            background-color: white;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
             transition: transform 0.3s ease;
         }
+        table.dog-item-gallery {
+    padding: 0 !important;
+    margin: 0 auto !important; /* Centers within 1000px width */
+    border-spacing: 0;
+}
+td.dog-item-image {
+    padding: 5px; /* Reduce padding */
+}
         
-        .parking-image:hover {
+        .dog-item-image:hover {
             transform: scale(1.05);
         }
         
-        .booking-link {
-            word-break: break-all;
-            color: #4e98ff;
-            text-decoration: none;
-            transition: color 0.3s ease;
+        .dog-item-image img {
+            width: 200px;
+            height: 280px;
+            position: relative;
+            left: 50px;
+            object-fit: cover;
         }
         
-        .booking-link:hover {
+        .dog-item-caption {
+            text-align: center;
+            margin-top: 6px;
+            font-size: 20px;
+            object-fit: cover;
+            font-weight: 500;
             color: #4e98ff;
-            text-decoration: underline;
+        }
+        
+        .adoption-list {
+            list-style-type: none;
+            padding: 0;
+        }
+        
+        .adoption-list li {
+            margin-bottom: 12px;
+            padding-left: 20px;
+            position: relative;
+        }
+        
+        .adoption-list li:before {
+            content: "•";
+            color: #4e98ff;
+            position: absolute;
+            left: 0;
+            font-size: 20px;
+            line-height: 20px;
         }
         
         .intro-text {
-            max-width: 800px;
-            margin: 0 auto 30px;
-            text-align: center;
+            font-size: 18px;
             line-height: 1.6;
+            margin-bottom: 30px;
+            text-align: center;
+        }
+
+        .about-section-table {
+            width: 100%;
+            background-color: white;
+            border-radius: 15px;
+            position: relative;
+            left: 17px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+            margin-bottom: 30px;
+            border-collapse: separate;
+        }
+        
+        .about-section-cell {
+            padding: 25px;
+            left: 17px;
+        }
+        
+        .about-section-heading {
+            margin-top: 0;
+            border-bottom: 2px solid #ccdeff;
+            padding-bottom: 10px;
+            margin-bottom: 20px;
+            left: 17px;
+            color: #4e98ff;
         }
     </style>
 </head>
@@ -114,46 +218,64 @@
         
         <tr>
             <td colspan="2">
-                <h1 class="header">About Me</h1>
-                <p class="intro-text">Get to know more about my journey, experience, and passion for aesthetics. I'm dedicated to helping you look and feel your best through personalized services and treatments.</p>
+                <h1 class="header">Tips & Tricks</h1>
+                <p class="intro-text">Bringing home a pup? Here are a few classic tips and tricks!</p>
             </td>
         </tr>
         
         <tr>
             <td colspan="2">
-                <table class="about-section-table">
+                <table class="adoption-table" style="left: 17px; position: relative;">
                     <tr>
-                        <td class="about-section-cell about-content">
-                            <h2 class="about-section-heading">My Journey</h2>
-                            <p>I graduated from Elegance Schools Inc. in 2022, where I completed my full-time esthetics program diploma, as well as certificates in laser hair removal, electrolysis, and gel nails. From this program, I discovered that nails and facials were my two favorite services, and I wanted to build on them and continue learning more advanced techniques. I love doing nails and creating beautiful nail art. I started my own business focusing on nails in May 2024, and now I am expanding to include facials and spray tans.</p>
-                            <p>I am passionate about the medical aesthetics world and truly believe in the effectiveness of medical-grade skincare. I have seen firsthand how much they can help. I'm working with Erika at NEWWay Aesthetics to continue my education and deepen my understanding of skin and skin therapy while also providing facials under NEWWay. Whether you are looking for a maintenance facial, light face resurfacing, or seeking advice on acne, aging, etc., we will help you determine the best course of action for your concerns. I have over seven certificates in the aesthetics industry and will continue to learn, grow, and add to that.</p>
-                            <p>Outside of work, I love spending time with my friends and family, checking out new cafes, places to eat, markets, and going to Pilates or workout classes.</p>
+                        <td class="adoption-cell" >
+                            <h2 id="dog-adoption-desc">🦴 Training Made Easy
+                            </h2>
+                            <ul class="adoption-list">
+                                <li>Start with the basics: Focus on commands like sit, stay, come, and leave it.
+                                </li>
+                                <li>Keep it short & fun: 5-10 minute sessions help dogs stay engaged without getting overwhelmed.
+                                </li>
+                                <li>Use high-value treats: Save special treats for training to keep your pup motivated.
+                                </li>
+                                <li>Be consistent: Use the same words, tone, and hand signals every time.
+                                </li>
+                                <li>Reward immediately: Praise or treat your dog the second they do the right thing.
+                                </li>
+                                <li>Train in low-distraction areas first: Once they've mastered it, slowly add distractions.
+                                </li>
+                                <li>End on a positive note: Finish sessions with a command they know and lots of praise!
+                                </li>
+                                <li>Never punish mistakes: Redirect gently and reinforce the behavior you do want.
+                                </li>
+                            </ul>
                         </td>
                     </tr>
                 </table>
             </td>
         </tr>
         
+        
         <tr>
             <td colspan="2">
                 <table class="about-section-table">
                     <tr>
                         <td class="about-section-cell">
-                            <h2 class="about-section-heading">Contact Me</h2>
+                            <h2 class="about-section-heading">🍖 DIY Treats
+                            </h2>
                             <table style="width: 100%;">
                                 <tr>
                                     <td>
-                                        <a href="https://www.instagram.com/julsaesthetics_/" target="_blank" class="contact-link">Main Instagram: @julsaesthetics_</a>
+                                        <a href="https://itdoesnttastelikechicken.com/easy-homemade-dog-treats/" target="_blank" class="contact-link">Banana Peanut Butter Treat Recipe</a>
                                     </td>
                                 </tr>
                                 <tr>
                                     <td>
-                                        <a href="https://www.instagram.com/julia.newwayaesthetics/" target="_blank" class="contact-link">Facials Instagram: Julia.newayaesthetics</a>
+                                        <a href="https://masterpiecesofmylife.com/easy-homemade-no-bake-dog-treat-recipe/" target="_blank" class="contact-link">Blueberry Yogurt Peanut Butter Treat Recipe</a>
                                     </td>
                                 </tr>
                                 <tr>
                                     <td>
-                                        <a href="mailto:jewlsmorton@gmail.com" class="contact-link">Email: jewlsmorton@gmail.com</a>
+                                        <a href="https://masterpiecesofmylife.com/easy-homemade-no-bake-dog-treat-recipe/" target="_blank" class="contact-link">Blueberry Yogurt Peanut Butter Treat Recipe</a>
                                     </td>
                                 </tr>
                             </table>
