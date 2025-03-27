@@ -1,0 +1,412 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Adoption | Paws & Pups</title>
+    <link rel="icon" type="image/x-icon" href="images/favicon.ico">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+    font-family: 'Poppins', sans-serif;
+    line-height: 1.6;
+    color: #333;
+    margin: 0;
+    padding: 0;
+}
+
+table {
+    width: 1000px !important;
+    max-width: 1000px;
+    margin: 0 auto;
+    border-collapse: collapse;
+}
+
+td span {
+    padding: 20px;
+    vertical-align: top;
+    width: 960px !important;
+    max-width:960px !important; 
+}
+        .adoption-table {
+            background-color: white;
+            border-radius: 15px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+            margin-bottom: 30px;
+            width: 960px;
+            border-collapse: separate;
+            border-spacing: 0;
+            overflow: hidden;
+        }
+        
+        /* .adoption-cell {
+             padding: 25px; */
+        
+        
+        .adoption-table h2 {
+            margin-top: 0;
+            border-bottom: 2px solid #ccdeff;
+            padding-bottom: 10px;
+            margin-bottom: 20px;
+            color: #4e98ff;
+        }
+        
+        .adoption-title {
+            color: #4e98ff;
+            margin-top: 20px;
+            margin-bottom: 10px;
+            font-weight: 600;
+        }
+        
+        .price-list {
+            list-style-type: none;
+            padding: 0;
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 15px;
+        }
+        
+        .price-list li {
+            background-color: white;
+            padding: 15px;
+            border-radius: 10px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+            transition: all 0.3s ease;
+            border-left: 4px solid #4e98ff;
+        }
+        
+        .price-list li:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            border-left: 4px solid #4e98ff;
+        }
+        
+        .adoption-description {
+            margin-bottom: 15px;
+            line-height: 1.6;
+        }
+        
+        /* Simple item gallery styling */
+        .dog-item-gallery {
+            width: 980px;
+            margin: 0 auto; /* Centers the gallery */
+            border-collapse: separate;
+            position: relative;
+            left: -19px;
+        }
+        
+        .dog-item-image {
+            width: 200px;
+            height: 230px;
+            border-radius: 10px;
+            padding-bottom: 65px;
+            /* overflow: hidden; */
+            position: relative;
+            background-color: white;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease;
+        }
+        table.dog-item-gallery {
+    padding: 0 !important;
+    margin: 0 auto !important; /* Centers within 1000px width */
+    border-spacing: 0;
+}
+td.dog-item-image {
+    padding: 5px; /* Reduce padding */
+}
+        
+        .dog-item-image:hover {
+            transform: scale(1.05);
+        }
+        
+        .dog-item-image img {
+            width: 200px;
+            height: 280px;
+            position: relative;
+            left: 50px;
+            object-fit: cover;
+        }
+        
+        .dog-item-caption {
+            text-align: center;
+            margin-top: 6px;
+            font-size: 20px;
+            object-fit: cover;
+            font-weight: 500;
+            color: #4e98ff;
+        }
+        
+        .adoption-list {
+            list-style-type: none;
+            padding: 0;
+        }
+        
+        .adoption-list li {
+            margin-bottom: 12px;
+            padding-left: 20px;
+            position: relative;
+        }
+        
+        .adoption-list li:before {
+            content: "•";
+            color: #4e98ff;
+            position: absolute;
+            left: 0;
+            font-size: 20px;
+            line-height: 20px;
+        }
+        
+        .intro-text {
+            font-size: 18px;
+            line-height: 1.6;
+            margin-bottom: 30px;
+            text-align: center;
+        }
+
+    </style>
+</head>
+<body id="top">
+    <table style="width: 1000px;">
+        <tr>
+            <td colspan="2">
+                <header>
+                    <table style="width: 1000px;">
+                        <tr>
+                            <img src="images/Banner.jpg" alt="Paws & Pups Banner" title="Paws & Pups Banner" class="banner hover">
+                            <td>
+                                <nav class="main-nav">
+                                    <ul>
+                                        <li><a href="index.html" class="nav-link">Home</a></li>
+                                        <li><a href="breed.html" class="nav-link">Adoption</a></li>
+                                        <li><a href="tips.html" class="nav-link">Tips & Tricks</a></li>
+                                        <li><a href="food.html" class="nav-link">Foods</a></li>
+                                        <li><a href="references.html" class="nav-link">References</a></li>
+                                    </ul>
+                                </nav>
+                            </td>
+                        </tr>
+                    </table>
+                </header>
+            </td>
+        </tr>
+        
+        <tr>
+            <td colspan="2">
+                <h1 class="header">Adoption</h1>
+                <p class="intro-text">From the tiny Chihuahua to the towering Great Dane, dog breeds come in all shapes, sizes, and personalities! No matter the breed, every pup brings something special to the pack!</p>
+            </td>
+        </tr>
+        
+        <tr>
+            <td colspan="2">
+                <table class="adoption-table">
+                    <tr>
+                        <td class="adoption-cell">
+                            <h2>Checkpoint... Are you ready for a dog?</h2>
+                            <ul class="price-list">
+                                <li>Do I have time to give my dog lots of love and attention?</li>
+                                <li>Can take my dog on a walk three times a day?</li>
+                                <li>Do I have a dog allergy?!</li>
+                                <li>Do I travel often- and have plan for pet care when I do?</li>
+                                <li>Am I ready for vet bills, vaccines, and emergencies?</li>
+                                <li>Can I afford food, grooming, toys, and regular supplies?</li>
+                                <li>Will I need pet insurance or emergency savings for my dog?</li>
+                                <li> Can I be patient during training (accidents, barking, chewing)?</li>
+                                <li> Will I provide enough mental stimulation?</li>
+                                <li> Do I understand that dogs aren't just pets—they're family?</li>
+                            </ul>
+                        </td>
+                    </tr>
+                </table>
+            </td>
+        </tr>
+        
+        <tr>
+            <td colspan="2">
+                <table class="adoption-table">
+                    <tr>
+                        <td class="adoption-cell">
+                            <h2>🐶 Choosing the Right Dog</h2>
+                            <p class="adoption-description">Not all pups are the same! Some are bundles of zoomies, others prefer lazy cuddles. Think about your lifestyle—do you want a hiking buddy or a couch companion? Big dogs need more space, and while puppies are adorable, they require tons of training. Older dogs? Often calmer and already know the ropes. Find a furry friend that fits you! 🐾</p>
+                            
+                            <h3 class="adoption-title">Matching your energy</h3>
+                            <p class="adoption-description">High-energy breeds need lots of exercise and mental stimulation, while some are more low-key. Some high energy dogs are Border Collies, Labrador Retrievers, and Jask Russell Terriers. Examples of low-energy dogs are Basset Hounds, Bulldogs, and Cavalier King Charles Spaniel.</p>
+                            
+                            <h3 class="adoption-title">Size of dog</h3>
+                            <p class="adoption-description"> Consider your living space. A Saint Bernard in a studio apartment? Maybe not the best match. Some examples of big dogs are Great Danes, German Shepherds, and a Bernese Mountain Dog. Examples of a small dog are Chihuahuas, Pomeranians, and French Bulldogs.</p>
+                            
+                            <h3 class="adoption-title">Age considerations</h3>
+                            <p class="adoption-description">Puppies need lots of training. Adult or senior dogs may already be house-trained and calmer.</p>
+                        </td>
+                    </tr>
+                </table>
+            </td>
+        </tr>
+        
+        <tr>
+            <td colspan="2">
+                <table class="adoption-table">
+                    <tr>
+                        <td class="adoption-cell">
+                            <h2 id="dog-adoption-desc">🏥 First Few Days at Home</h2>
+                            <ul class="adoption-list">
+                                <li>Give your dog time to adjust—new smells, sights, and sounds can be overwhelming.
+                                </li>
+                                <li>Set a routine for meals, potty breaks, and walks right away.
+                                </li>
+                                <li>Introduce your dog slowly to different rooms, family members, and other pets.
+                                </li>
+                                <li>Create a cozy, quiet spot where your dog can retreat and feel safe.
+                                </li>
+                                <li>Avoid overwhelming them with too many new people or outings in the first few days.
+                                </li>
+                                <li>Reward calm behavior with treats and gentle affection.
+                                </li>
+                                <li>Watch for signs of stress (panting, hiding, pacing) and give them space when needed.
+                                </li>
+                                <li>Be patient—this is a big transition for them, and every dog adjusts at their own pace!
+                                </li>
+                            </ul>
+                        </td>
+                    </tr>
+                </table>
+            </td>
+        </tr>
+        
+        <tr>
+            <td colspan="2">
+                
+                <table class="adoption-table">
+                    <tr>
+                        <td class="adoption-cell">
+                            <h2>Must-Haves for New Dogs</h2>
+                            <table width="100%">
+                                <tr>
+                                    <!-- <td style="display: flex; justify-content: center; align-items: center;"> -->
+                                        <table class="nail-gallery"  style="padding: 0 !important; margin: 0 !important;">
+                                            <tr>
+                                                <td colspan="2">
+                                                    <table class="nail-gallery"  style="padding: 0 !important; margin: 0 !important;">
+                                                        <tbody>
+                                                            <td class="nail-image">
+                                                                    <img src="images/frenchtips.jpg" class="active hover" alt="Elegant French Tips" title="Elegant French Tips">
+                                                                <p class="nail-caption">🦴 Food & Water Bowls 🦴</p>
+                                                            </td>
+                                                            <td class="nail-image">
+                                                                    <img src="images/nails4.jpg" class="active hover" alt="Abstract Design" title="Abstract Design">
+                                                                <p class="nail-caption">🛏 Comfortable Bed or Crate 🛏</p>
+                                                            </td>
+                                                            <td class="nail-image">
+                                                                    <img src="images/nails1.jpg" class="active hover" alt="Glittery Ombre" title="Glittery Ombre">
+                                                                <p class="nail-caption">🐕 Leash, Collar & ID Tag 🐕</p>
+                                                            </td>
+                                                        </tbody>
+                                                    </table>
+                                                </td>
+                                            </tr>        
+                                        </table>
+                                    <!-- </td> -->
+                                </tr>
+                            </table>
+                        </td>
+                    </tr>
+                </table>
+            </td>
+        </tr>
+        
+        <tr>
+            <td colspan="2">
+                <table class="adoption-table" style="left: 17px; position: relative;">
+                    <tr>
+                        <td class="adoption-cell">
+                            <h2>🧠 Training & Socialization 🐾</h2>
+                            <h3 class="adoption-title">🧠 Training</h3>
+                            <p class="adoption-description">Start training early—even basic commands like sit, stay, and come go a long way.
+                                Try to use positive reinforcement: treats, praise, and patience make learning fun. Keep training sessions short and consistent to avoid overwhelming your dog. Avoid punishment—redirect unwanted behavior instead and celebrate progress!
+                            </p>
+                            
+                            <h3 class="adoption-title">🐾 Making Friends (Socialization)                            </h3>
+                            <p class="adoption-description">Gently introduce your dog to new people, pets, and environments at their pace.
+
+                                Take short walks in different areas to help them get used to new sights and smells.
+                                
+                                Reward calm behavior when meeting others to build positive associations.
+                                
+                                Sign up for a puppy class or group walks if they're comfortable—it's great practice!
+                                
+                                </p>
+                        </td>
+                    </tr>
+                </table>
+            </td>
+        </tr>
+
+
+        <tr>
+            <td colspan="2">
+                <table class="adoption-table" style="left: 17px; position: relative;">
+                    <tr>
+                        <td class="adoption-cell" >
+                            <h2 id="dog-adoption-desc">🐾 Vet Care & Wellness
+                            </h2>
+                            <ul class="adoption-list">
+                                <li>Book a vet appointment within the first week.
+                                </li>
+                                <li>Stay on top of vaccinations, flea/tick prevention, and annual checkups.
+                                </li>
+                                <li>Ask your vet about spaying/neutering if not already done.
+                                </li>
+                                <li>Keep a folder (digital or paper) with all vet records and vaccination history.
+                                </li>
+                                <li>Watch for changes in appetite, behavior, or energy—these can be early signs something's off.
+                                </li>
+                            </ul>
+                        </td>
+                    </tr>
+                </table>
+            </td>
+        </tr>
+
+        <tr>
+            <td colspan="2">
+                <table class="adoption-table" style="left: 17px; position: relative;">
+                    <tr>
+                        <td class="adoption-cell" >
+                            <h2 id="dog-adoption-desc">❤️ Love, Patience & Play
+                            </h2>
+                            <ul class="adoption-list">
+                                <li>Your new best friend might take time to fully trust you—every dog has their own story.
+                                </li>
+                                <li>Show them love, consistency, and lots of playtime.
+                                </li>
+                                <li>Remember: you're not just adopting a dog… you're gaining a loyal companion for life.
+                                </li>
+                            </ul>
+                        </td>
+                    </tr>
+                </table>
+            </td>
+        </tr>
+        
+        <tr>
+            <td colspan="2">
+                <table class="back-to-top-table">
+                    <tr>
+                        <td align="center">
+                            <a href="#top" class="back-to-top">Back to Top</a>
+                        </td>
+                    </tr>
+                </table>
+            </td>
+        </tr>
+        <tr>
+            <td colspan="2">
+                <footer style="left: 20px; position: relative;">
+                    <p>&copy; 2025 Paws & Pups. Made with ❤️ by Ivy Cho.</p>
+                </footer>
+            </td>
+        </tr>
+</table>
+        </body>
+</html>
